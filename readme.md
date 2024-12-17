@@ -1,11 +1,12 @@
-# 🎧 **Spotify Hit Predictor: Kaggle Weekend Challenge 🚀**  
+# 🎧 **Spotify Genre Predictor: Kaggle Weekend Challenge 🚀**  
 
 ![image](L.png)
 
 
 ## 🎯 **Contexto**
-Este dataset contiene características extraídas de canciones utilizando la **Spotify Web API**. Las canciones están etiquetadas como **'Hit' (1)** o **'Flop' (0)** en función de ciertos criterios establecidos por el autor.  
-La finalidad de este desafío es construir un **modelo de clasificación** capaz de predecir si una canción será un **'Hit'** o no. 🎵
+Este dataset contiene características extraídas de canciones utilizando la **Spotify Web API**. Las canciones están etiquetadas por su estilo **['Underground Rap', 'techhouse', 'Trap Metal', 'techno', 'Hiphop', 'Pop', 'RnB', 'trance', 'psytrance', 'trap', 'Rap', 'Dark Trap',
+       'dnb', 'Emo', 'hardstyle']**.  
+La finalidad de este desafío es construir un **modelo de clasificación** capaz de predecir el estilo de la canción. 🎵
 
 ---
 
@@ -58,11 +59,7 @@ Este dataset se compone de varias características detalladas para cada canción
 - **valence**: Positividad transmitida por la canción.  
 - **tempo**: Velocidad de la canción en BPM.  
 - **duration_ms**: Duración de la pista en milisegundos.  
-- **chorus_hit**: Mejor estimación del inicio del estribillo.  
-- **sections**: Número de secciones en la canción.  
-- **target**:  
-    - `1`: La canción fue un **Hit** (apareció en Billboard Hot-100).  
-    - `0`: La canción no cumplió los criterios y se considera **Flop** (sin ánimo despectivo).  
+etc... 
 
 Para más detalles, puedes consultar la documentación de la API de Spotify:  
 👉 [Audio Features Spotify API](https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/)
@@ -70,7 +67,7 @@ Para más detalles, puedes consultar la documentación de la API de Spotify:
 ---
 
 ## 🎯 **Objetivo del Desafío**
-Construid un **modelo de clasificación** que, dadas las características de las canciones, prediga si una canción será un **Hit** o un **Flop**.
+Construid un **modelo de clasificación** que, dadas las características de las canciones, prediga el genero de la canción.
 
 ---
 
